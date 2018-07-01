@@ -1,0 +1,10 @@
+print ('prefect')
+print ("showcase")
+print ('''Hello, 
+	World!''')
+print ('One, ' + 'two, three')
+print ('Echo..  '*4)
+print (len ('Hello'))
+print (int ('365'))
+print (str(365))
+print ("123" + "456")
