@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app='todo'>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src='todo.js'></script>
+</head>
+<body>
+
+
+<div ng-controller="TodoCtrl">
+  <form class="form-horizontal">
+
+
+          <input  type="text" ng-model="todo.task">
+          <input  type="text" ng-model="todo.task2">
+
+
+      <button  ng-click="save()" >Save</button>
+
+  </form>
+  <table >
+    <tr ng-repeat="todo in todos">
+        <td>{{todo.task}} </td><td>{{todo.task2}}</td><td><button  ng-click="delete(todo.id)">delete</button></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+
